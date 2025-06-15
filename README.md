@@ -27,5 +27,14 @@ java -jar prueba-0.0.1-SNAPSHOT.jar
 ## Ejemplo de acceso
 - Una vez levantada la aplicación, puedes acceder a los endpoints expuestos desde:
 ```
-http://localhost:8090/
+http://localhost:8090/customers
+```
+- POST
+- Con el siguiente cuerpo 
+
+```
+{
+    "type": "c",
+    "numberDocument": "23445322"
+}
 ```
