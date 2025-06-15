@@ -23,7 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerDTO searchByTypeAndNumber(FindCustomerDTO findCustomerDTO) {
         Customer customer = customerRepository
                 .searchByTypeAndNumber(findCustomerDTO)
-                .orElseThrow(() -> new ObjectNotFoundException("Customer not found"));
+                .orElseThrow(() -> new ObjectNotFoundException("Cliente no encontrado"));
 
         return CustomerMapper.toDto(customer);
     }
